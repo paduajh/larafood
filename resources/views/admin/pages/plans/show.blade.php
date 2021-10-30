@@ -29,6 +29,7 @@
             @csrf
             @method('DELETE')
             <button type="submit" class="btn btn-danger">Deletar Plano</button>
+            <a href="{{ route ('plans.edit', $plan->url)}}" class="btn btn-info">editar</a>
         </form>
     </div>
 </div>
